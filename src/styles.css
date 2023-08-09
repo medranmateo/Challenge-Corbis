@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+body {
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: gainsboro;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

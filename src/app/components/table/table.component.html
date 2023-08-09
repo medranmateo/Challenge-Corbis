@@ -1,0 +1,37 @@
+<div class="container mt-4">
+    <h2></h2>
+    <div class="table-container my-3">
+        <table class="table table-striped mb-1" *ngIf="objectives">
+            <thead>
+                <tr>
+                    <th scope="col" sortable="objective">OBJECTIVE</th>
+                    <th scope="col" sortable="perspectives">PERSPECTIVE</th>
+                    <th scope="col" sortable="owner">OWNER</th>
+                    <th scope="col" sortable="description">DESCRIPTION</th>
+                    <th scope="col" sortable="detail"><i class="bi bi-three-dots-vertical"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let objective of objectives">
+                    <td>{{ objective.code + ' ' + objective.name }} </td>
+                    <td>{{objective.perspective.name}}</td>
+                    <td>{{objective.code}}</td>
+                    <td>{{objective.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+                <a class="page-link" href="#" (click)="currentPage = currentPage - 1">Previous</a>
+            </li>
+            <li class="page-item" *ngFor="let page in totalPages()">
+                <a class="page-link" href="#" (click)="currentPage = page">{{ page }}</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === totalPages()">
+                <a class="page-link" href="#" (click)="currentPage = currentPage + 1">Next</a>
+            </li>
+        </ul>
+    </nav> -->
+</div>

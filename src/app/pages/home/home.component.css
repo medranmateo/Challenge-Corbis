@@ -1,0 +1,24 @@
+.col-body{
+    width: calc(100vw - 60px);
+    margin-top: 65px;
+}
+
+.col-body:last-child{
+    margin-left: 65px;
+}
+
+.col-sidebar{
+    height: 100vh;
+    max-width: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.col-comment{
+    height: 100vh;
+    max-width: 60px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
